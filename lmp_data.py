@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from settings import congifsettings
 
 connection = congifsettings()['alchemy_engine']
-db_table = congifsettings()['dbtable']
+db_table = congifsettings()['table']
 db_conn = create_engine(connection)
 
 trade_date = '7/25/2021'
