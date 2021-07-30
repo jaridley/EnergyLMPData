@@ -11,7 +11,7 @@ lmp_data = pd_lmp.read_csv('https://docs.misoenergy.org/marketreports/20210725_d
 lmp_data.insert(3, 'Date', trade_date)
 data = lmp_data.head()
 try:
-    data.to_sql(db_conn, db_table, if_exists='append', index=False)
+    data.to_sql(db_table, db_conn, if_exists='append', index=False)
     print('Data was imported')
 except Exception as db_error:
     print(db_error)
