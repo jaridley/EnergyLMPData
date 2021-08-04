@@ -5,7 +5,6 @@ from settings import configsettings
 
 def db_connect():
     try:
-        print(f'Connecting to database')
         conn = psycopg2.connect(
             user=configsettings()['user'],
             password=configsettings()['password'],
@@ -15,5 +14,4 @@ def db_connect():
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
         sys.exit(1)
-    print('Connection successful')
     return conn
