@@ -1,6 +1,6 @@
 import json
 
 
-def congifsettings():
+def configsettings():
     configfile = open('config.json')
     return json.load(configfile)
