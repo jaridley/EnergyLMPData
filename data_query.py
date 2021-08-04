@@ -7,7 +7,4 @@ def data_query():
     where node='AEC'
     '''
     lmp_df = pd.read_sql(query, db_connect())
-    print(lmp_df)
-
-
-data_query()
+    return lmp_df
