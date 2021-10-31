@@ -1,9 +1,9 @@
 {
-  "host": "34.69.172.133",
-  "database": "miso-dalmp",
-  "table": "da_exante_lmp",
+  "host": "<IP_address>",
+  "database": "<database>",
+  "table": "<tablename>",
   "user": "postgres",
-  "password": "Bakusaiga#01",
+  "password": "<password>",
   "alchemy_engine": "postgresql+psycopg2://postgres:<password>@<IP adress>/<databasename>",
   "rename_columns" :
     {
